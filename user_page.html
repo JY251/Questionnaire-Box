@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+      body{
+        background-color:paleturquoise;
+      }
+      p {
+        color:black
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="keywords" content="日常生活, 質問, 依頼">
+    <meta name="description" content="日常生活の様々なことに関する質問箱・依頼プラットフォーム">
+    <meta name="author" content="Group K">
+    <meta http-equiv="refresh" content="30">
+    <script src="common.js"></script>
+    <script>
+      Title();
+    </script>  </head>
+  <body>
+
+    <div id="container" style="width:500px;"></div>
+    <div id="header" style="background-color:paleturquoise;">
+    <script>
+      document.write("<h1>マイアカウント</h1>");
+    </script>
+    <div id="menu" style="background-color:#FFD700;height:2000px;width:150px;float:left">
+      <a href="./main_page.html">トップページ</a>
+      <br><br>
+      <a href="post_a_question.html">質問をする</a>
+      <br><br>
+      <a href="./user_page.html">アカウント</a>
+      <br>
+      <br>
+      <a href="./hot.html">最近の質問</a>
+    </div>
+    <div id="content" style="height: 200px;width:500px;float:left;">
+      <h3>ユーザー名：hoge</h3>
+      <p>現在の保有トークン：
+        <script>
+          document.write(300);
+        </script>
+      </p>
+      <p>現在のランク： Level.
+        <script>
+          document.write(5);
+        </script>
+      </p>
+      <p id="Question">質問を入力してください。</p>
+      <script src="main.js"></script>
+      <form>
+        質問のタイトル：<input type="text" name="title of question"><br>
+        　　本文　　　：<input type="text" name="body of question"><br>
+        <button type="button" onclick="AfterClick2()">確認画面へ</button><br><br>
+      </form>
+
+      <table border="1" id="Atribution">
+        <tr>
+          <tr>
+            <th>Atrribution</th>
+            <th>value</th>
+          </tr>
+          <td>your tokens</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>your rank</td>
+          <td>Level 19</td>
+        </tr>
+      </table>
+      <br>
+
+      <a href="./main_page.html" target="_blank" rel="noopener noreferrer">Back</a>
+    </div>
+    <div id="footer" style="background-color: paleturquoise;text-align:center;clear:both">
+    ©Group K</div>
+  </body>
+</html>

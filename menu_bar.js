@@ -1,0 +1,1 @@
+document.write(<div id="menu" style="background-color:#FFD700;height:2000px;width:150px;float:left><a href="./main_page.html">トップページ</a><br><br><a href="./user_page.html">アカウント</a><br><br>  <a href="./hot.html">最近の質問</a></div>);

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+      body{
+        background-color:paleturquoise;
+      }
+      p {
+        color:black
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="keywords" content="日常生活, 質問, 依頼">
+    <meta name="description" content="日常生活の様々なことに関する質問箱・依頼プラットフォーム">
+    <meta name="author" content="Group K">
+    <meta http-equiv="refresh" content="30">
+    <script src="common.js"></script>
+    <script>
+      Title();
+    </script>  </head>
+  <body>
+
+    <div id="container" style="width:500px;"></div>
+    <div id="header" style="background-color:paleturquoise;">
+    <script>
+      document.write("<h1>トップページ</h1>");
+    </script>
+    <div id="menu" style="background-color:#FFD700;height:2000px;width:150px;float:left">
+      <a href="./main_page.html">トップページ</a>
+      <br><br>
+      <a href="post_a_question.html">質問をする</a>
+      <br><br>
+      <a href="./user_page.html">アカウント</a>
+      <br>
+      <br>
+      <a href="./hot.html">最近の質問</a>
+    </div>
+    <div id="content" style="height: 200px;width:500px;float:left;">
+      <h2 style="font-family:verdana;color:blue;font-size:25;">ジャンル：food</h2>
+      <h3>ユーザー名：hoge</h3>
+      <p>ログインをしてください</p>
+    <div id="forget_pwd">
+      <script type="text/babel">
+        ReactDOM.render(
+          <h3>パスワードをお忘れですか？</h3>,
+          document.getElementbyId("forget_pwd")
+        );
+      </script>
+      <script>
+        function CorrectPwd()
+        {
+          var x=document.getElementById("input_pwd").value;
+          if (x!=123)
+          {
+            alert("パスワードが間違っています");
+          }
+        }
+      </script>      
+      <form>
+        ユーザー名：<input type="text" name="user_id"><br>
+        パスワード：<input id="input_pwd" type="password" name="password"><br>
+        <button type="button" onclick="CorrectPwd()">OK</button>
+        <br>
+      </form>
+
+      <p style="font-size:12px;">アカウントがありませんか？ 
+        <a href="create_accout.html">アカウントを作成</a>
+      </p>
+
+      <p id="Question">質問を入力してください。</p>
+      <script src="main.js"></script>
+      <form>
+        質問のタイトル：<input type="text" name="title of question"><br>
+        　　本文　　　：<input type="text" name="body of question"><br>
+        <button type="button" onclick="AfterClick2()">確認画面へ</button><br><br>
+      </form>
+    </div>
+    <div id="footer" style="background-color: paleturquoise;text-align:center;clear:both">
+    ©Group K</div>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+      body{
+        background-color:paleturquoise;
+      }<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+      body{
+        background-color:paleturquoise;
+      }
+      p {
+        color:black
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="keywords" content="日常生活, 質問, 依頼">
+    <meta name="description" content="日常生活の様々なことに関する質問箱・依頼プラットフォーム">
+    <meta name="author" content="Group K">
+    <meta http-equiv="refresh" content="30">
+    <title>日常生活の質問箱</title>
+  </head>
+  <body>
+
+    <div id="container" style="width:500px;"></div>
+    <div id="header" style="background-color:paleturquoise;">
+    <script>
+      document.write("<h1>質問をする</h1>");
+    </script>
+    <div id="menu" style="background-color:#FFD700;height:2000px;width:150px;float:left">
+      <a href="./main_page.html">トップページ</a>
+      <br><br>
+      <a href="./user_page.html">アカウント</a>
+      <br>
+      <br>
+      <a href="./hot.html">最近の質問</a>
+    </div>
+    <div id="content" style="height: 200px;width:500px;float:left;">
+      <h2 style="font-family:verdana;color:blue;font-size:25;">ジャンル：food</h2>
+      <h3>ユーザー名：hoge</h3>
+      <p>ログインをしてください</p>
+    <div id="forget_pwd">
+      <script type="text/babel">
+        ReactDOM.render(
+          <h3>パスワードをお忘れですか？</h3>,
+          document.getElementbyId("forget_pwd")
+        );
+      </script>
+      <script>
+        function CorrectPwd()
+        {
+          var x=document.getElementById("input_pwd").value;
+          if (x!=123)
+          {
+            alert("パスワードが間違っています");
+          }
+        }
+      </script>      
+      <form>
+        ユーザー名：<input type="text" name="user_id"><br>
+        パスワード：<input id="input_pwd" type="password" name="password"><br>
+        <button type="button" onclick="CorrectPwd()">OK</button>
+        <br>
+      </form>
+
+      <p style="font-size:12px;">アカウントがありませんか？ アカウントを作成</p>
+      <p>アカウントを作成</p>
+      <form>
+        　　ユーザー名　　　：<input type="text" name="user_id"><br>
+        　　パスワード　　　：<input type="password" name="password"><br>
+        パスワード（確認用）：<input type="password" name="password"><br><br>
+        <p>利用規約及びプライバシーポリシーに同意する</p>
+        <input type="checkbox" name="agree" value="agree">同意する<br>
+        <input type="radio" name="agree" value="agree">同意する（テスト用）<br>
+        <button type="button" onclick="alert('本当に送信しますか?')">確認画面へ</button><br><br>
+      </form>
+
+      <iframe loading="lazy" src="https://en.wikipedia.org/wiki/Main_Page" width="600" height="400"></iframe>
+      <p id="Question">質問を入力してください。</p>
+      <script src="main.js"></script>
+      <form>
+        質問のタイトル：<input type="text" name="title of question"><br>
+        　　本文　　　：<input type="text" name="body of question"><br>
+        <button type="button" onclick="AfterClick2()">確認画面へ</button><br><br>
+      </form>
+
+      <table border="1" id="Atribution">
+        <tr>
+          <tr>
+            <th>Atrribution</th>
+            <th>value</th>
+          </tr>
+          <td>your tokens</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>your rank</td>
+          <td>Level 19</td>
+        </tr>
+      </table>
+      <br>
+      <script>
+        document.write("投稿する際は、個人情報の流出に注意してください");
+      </script>
+      <noscript>申し訳ございません。ご使用中のブラウザはjavascriptをサポートしていないため、コンテンツを表示できません。</noscript>
+      <p style="text-align:center;">注意</p>
+      <hr>
+      <ul>
+        <li style="text-align:center">質問に回答してくれた方の回答の閲覧には<br>10トークンかかります。</li>
+        <li style="text-align:center">かかる報酬は、回答者のランクによって変化します（以下参照）</li>
+      </ul>
+      <ol>
+        <li>100トークン</li>
+        <li>2000トークン</li>
+      </ol>
+      <dl>
+        <dt>Rank3</dt>
+        <dd>- 10000トークン</dd>
+        <dt>Rank4</dt>
+        <dd>- 20000トークン</dd>
+      </dl>
+      <hr>
+      <a href="./div_css.html" target="_blank" rel="noopener noreferrer">Back</a>
+    </div>
+    <div id="footer" style="background-color: paleturquoise;text-align:center;clear:both">
+    ©Group K</div>
+  </body>
+</html>
+
+      p {
+        color:black
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="keywords" content="日常生活, 質問, 依頼">
+    <meta name="description" content="日常生活の様々なことに関する質問箱・依頼プラットフォーム">
+    <meta name="author" content="Group K">
+    <meta http-equiv="refresh" content="30">
+    <title>【div_js】日常生活の質問箱</title>
+  </head>
+  <body>
+
+    <div id="container" style="width:500px;"></div>
+    <div id="header" style="background-color:paleturquoise;">
+    <script>
+      document.write("<h1>質問をする</h1>");
+    </script>
+    <div id="menu" style="background-color:#FFD700;height:2000px;width:150px;float:left">
+      <b>Menu</b><br><br>
+      <b>Profile</b><br><br>
+      <b>Hot Quesitons</b><br>
+    </div>
+    <div id="content" style="height: 200px;width:500px;float:left;">
+      <h2 style="font-family:verdana;color:blue;font-size:25;">ジャンル：food</h2>
+      <h3>ユーザー名：hoge</h3>
+      <p>ログインをしてください</p>
+    <div id="forget_pwd">
+      <script type="text/babel">
+        ReactDOM.render(
+          <h3>パスワードをお忘れですか？</h3>,
+          document.getElementbyId("forget_pwd")
+        );
+      </script>
+      <script>
+        function CorrectPwd()
+        {
+          var x=document.getElementById("input_pwd").value;
+          if (x!=123)
+          {
+            alert("パスワードが間違っています");
+          }
+        }
+      </script>      
+      <form>
+        ユーザー名：<input type="text" name="user_id"><br>
+        パスワード：<input id="input_pwd" type="password" name="password"><br>
+        <button type="button" onclick="CorrectPwd()">OK</button>
+        <br>
+      </form>
+
+      <p style="font-size:12px;">アカウントがありませんか？ アカウントを作成</p>
+      <p>アカウントを作成</p>
+      <form>
+        　　ユーザー名　　　：<input type="text" name="user_id"><br>
+        　　パスワード　　　：<input type="password" name="password"><br>
+        パスワード（確認用）：<input type="password" name="password"><br><br>
+        <p>利用規約及びプライバシーポリシーに同意する</p>
+        <input type="checkbox" name="agree" value="agree">同意する<br>
+        <input type="radio" name="agree" value="agree">同意する（テスト用）<br>
+        <button type="button" onclick="alert('本当に送信しますか?')">確認画面へ</button><br><br>
+      </form>
+
+      <iframe loading="lazy" src="https://en.wikipedia.org/wiki/Main_Page" width="600" height="400"></iframe>
+      <p id="Question">質問を入力してください。</p>
+      <script src="main.js"></script>
+      <form>
+        質問のタイトル：<input type="text" name="title of question"><br>
+        　　本文　　　：<input type="text" name="body of question"><br>
+        <button type="button" onclick="AfterClick2()">確認画面へ</button><br><br>
+      </form>
+
+      <table border="1" id="Atribution">
+        <tr>
+          <tr>
+            <th>Atrribution</th>
+            <th>value</th>
+          </tr>
+          <td>your tokens</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>your rank</td>
+          <td>Level 19</td>
+        </tr>
+      </table>
+      <br>
+      <script>
+        document.write("投稿する際は、個人情報の流出に注意してください");
+      </script>
+      <noscript>申し訳ございません。ご使用中のブラウザはjavascriptをサポートしていないため、コンテンツを表示できません。</noscript>
+      <p style="text-align:center;">注意</p>
+      <hr>
+      <ul>
+        <li style="text-align:center">質問に回答してくれた方の回答の閲覧には<br>10トークンかかります。</li>
+        <li style="text-align:center">かかる報酬は、回答者のランクによって変化します（以下参照）</li>
+      </ul>
+      <ol>
+        <li>100トークン</li>
+        <li>2000トークン</li>
+      </ol>
+      <dl>
+        <dt>Rank3</dt>
+        <dd>- 10000トークン</dd>
+        <dt>Rank4</dt>
+        <dd>- 20000トークン</dd>
+      </dl>
+      <hr>
+      <a href="./div_css.html" target="_blank" rel="noopener noreferrer">Back</a>
+    </div>
+    <div id="footer" style="background-color: paleturquoise;text-align:center;clear:both">
+    ©Group K</div>
+  </body>
+</html>

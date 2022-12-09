@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+      body{
+        background-color:paleturquoise;
+      }
+      p {
+        color:black
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="keywords" content="日常生活, 質問, 依頼">
+    <meta name="description" content="日常生活の様々なことに関する質問箱・依頼プラットフォーム">
+    <meta name="author" content="Group K">
+    <meta http-equiv="refresh" content="30">
+    <script src="common.js"></script>
+    <script>
+      Title();
+    </script>  </head>
+  <body>
+
+    <div id="container" style="width:500px;"></div>
+    <div id="header" style="background-color:paleturquoise;">
+    <script>
+      document.write("<h1>アカウントを新規作成</h1>");
+    </script>
+    <div id="menu" style="background-color:#FFD700;height:2000px;width:150px;float:left">
+      <a href="./main_page.html">トップページ</a>
+      <br><br>
+      <a href="./user_page.html">アカウント</a>
+      <br>
+      <br>
+      <a href="./hot.html">最近の質問</a>
+    </div>
+    <div id="content" style="height: 200px;width:500px;float:left;">
+      <p>アカウントを作成</p>
+      <form>
+        　　ユーザー名　　　：<input type="text" name="user_id"><br>
+        　　パスワード　　　：<input type="password" name="password"><br>
+        パスワード（確認用）：<input type="password" name="password"><br><br>
+        <p>利用規約及びプライバシーポリシーに同意する</p>
+        <input type="checkbox" name="agree" value="agree">同意する<br>
+        <button type="button" onclick="alert('本当に送信しますか?')">確認画面へ</button><br><br>
+      </form>
+      <a href="./main_page.html" target="_blank" rel="noopener noreferrer">戻る</a>
+    </div>
+    <div id="footer" style="background-color: paleturquoise;text-align:center;clear:both">
+    ©Group K</div>
+  </body>
+</html>
